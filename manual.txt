@@ -1,0 +1,102 @@
+TODO-LIST
+
+
+
+만드는방법
+1.구상하기
+2.아는방법있으면써보기
+2-1. 만약에 모르겠으면 구글에찾기
+	2-1-1. 찾았으면 공식문서에다가 쳐서 읽어보기
+3.적용하기
+4.메뉴얼에 작성하기
+
+
+
+구성
+1. 시계 화면이 중앙으로 배치되도록 할것
+2. 체크리스트 추가 밑 해제 가능하게 할것
+3. 시간이 지나면 리스트 사라지는것도 가능하게 할것
+4. (선택)네이버 뉴스도 띄울수 있게 시도 해볼것
+
+알아야 될 사항들
+
+함수 선언문 vs 함수 표현식
+
+함수 선언문
+
+예시
+greet();
+//함수 선언
+function greet(){
+	console.log('hi');
+}
+
+
+-반드시 함수이름이 명시되어 있어야 한다.
+-함수 이름으로 호출한다 
+
+
+함수 표현식
+
+
+const sayHello = function(){ console.log('hello'};
+
+-함수 리터럴로 생성한 함수를 변수에 할당하는 방법을 함수 표현식이라고 한다.
+ 함수의 참조값이 sayHello라는 변수로 저장된다.
+-위의 예에서 sayHello는 함수의 이름이 아니다. function은 익명함수이고 함수 변수인 sayHello를 통해 호출할 수있다.
+
+
+
+
+할작업
+
+
+1. document.getElementById(); 
+-사용하는 방법
+var 변수 = document.getElementById(); 
+이런식으로 변수에다가 등록을 해놔야 한다.
+
+2.현재 시간 표시하기
+
+2-1)현재시간 따오는 방법
+var d = new Date(); 
+Date 객체를 사용해서 d 변수에다가 담는다.
+
+2-2)HTML에다가 표시하는 방법
+innerHTML을 사용해서 화면에다가 표시할 것이다.
+
+2-3)매초 마다 시간을 바꾸어야한다.
+setInterval을 사용할 예정
+
+
+
+timer-완료
+
+
+TODO리스트 버튼누르면 생성되게 함
+
+1. 버튼을 누르면 div를 생성해야한다
+방법1. document.createElement();
+사용법
+-var element = document.createElement(tagName[,options]);
+tagName: 생성할 Element
+options: is 속성을 가진 ElementCreationOptions 객체. 속성의 값은 cusotmsElements.define()사용해 정의한 사용자 정의 요소이다.
+
+function plustodo(){
+ var plusdiv = document.createElement("div"); //plusdiv변수에 createElement를 사용해 생성할 엘리먼트를 담는다.
+  plusdiv.classList.add("plusdiv");
+  plusdiv.innerHTML = '<input type="text" class="textTodo" name="member_name">'; //추가할 plusdiv 엘리먼트 안의 내용을 정의한다.
+  document.getElementById("todolist").appendChild(plusdiv); //appendChild로 이전에 정의한 plusUI 변수의 내용을 실제 추가한다.
+}
+
+
+2.document.createElement()에 CSS먹이기------------------------------------------------------------------------------------------------
+그냥 먹이면 된다. css에서 class값찾아서 먹이면 됨
+
+3. 중앙정렬하는방법 정리-------------------------------------------------------------------------------------------------
+
+div를 중앙정렬할때는 margin: 0 auto;를 사용하면 왠만하면 가운데로간다. 물론 img나  text는 "text-align:center"을 사용하자
+
+
+
+3.삭제 버튼 누를시 삭제하게 하기

@@ -3,15 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ToDo</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="title">
-      <h1>김경동의 Todo List</h1>
+    <div class="container">
+      <div class="title" id="title">
+        <h1>김경동의 Todo List</h1>
+      </div>
+      <div class="time" id="time"></div>
+      <div id="todo">
+        <button class="plussbtn" id="plussbtn" onclick="plustodo()">+</button>
+      </div>
+      <!-- <div class="todoFrame"> -->
+      <div id="todolist" class="todolist"></div>
+      <!-- </div> -->
     </div>
-    <div id="time"></div>
-    <div id="todo"></div>
   </body>
   <script src="index.js"></script>
 </html>

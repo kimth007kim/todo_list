@@ -1,7 +1,94 @@
-#title {
+* {
+  font-family: "Do Hyeon", sans-serif;
+}
+body {
+  background: #30e8bf; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #ff8235,
+    #30e8bf
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #ff8235,
+    #30e8bf
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.title {
   text-align: center;
 }
-#time {
-  color: red;
+.time {
+  color: black;
   text-align: center;
+}
+.plussbtn {
+  background-color: blue;
+  border-radius: 100%;
+  position: absolute;
+  color: white;
+}
+.todolist {
+  text-align: center;
+  /* background-color: black; */
+  margin: 0 auto;
+  display: inline;
+}
+.plusdiv .delete {
+  float: right;
+  border-radius: 100%;
+  background-color: red;
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+
+.plusdiv {
+  /* background-color: red; */
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.plusdiv input {
+  /* background: blue; */
+  text-align: center;
+}
+
+.textTodo__Big {
+  color: black;
+  margin: 0 auto;
+  color: rgb(255, 255, 0);
+  background: #654ea3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eaafc8,
+    #654ea3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eaafc8,
+    #654ea3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 50px;
+  width: 300px;
+}
+
+.textTodo__Small {
+  margin: 0 auto;
+  color: rgb(255, 255, 0);
+  background: #3494e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ec6ead,
+    #3494e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ec6ead,
+    #3494e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 100px;
+  width: 300px;
 }
