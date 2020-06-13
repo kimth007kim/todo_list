@@ -49,3 +49,22 @@ function deletebtn(obj) {			//detebutton인데 매개변수로 객체가 필요�
   var tr = obj.parentNode.parentNode;	//부모Node의 부모Node로 올라거서
   tr.parentNode.removeChild(tr);		// 그노드의 부모의 자식(즉, 그 객체 하나를 삭제한다.)
 }
+
+
+
+DOM객체(Document object model): 문서 객체 모델
+넓은 의미로 웹 브라우저가 HTML 페이지를 인식하는 방식이고, 좁은 의미로는 document 객체와 관련된 객체의 집합입니다.
+문서 객체 모델을 사용하면 HTML 페이지에 태그를 추가,수정,제거할 수 있습니다. 
+
+위의 사항을 문서 객체 모델로 바꿔보면 이렇다.
+
+div todolist
+div plusdiv
+span{
+button
+input
+}
+
+
+var tr = obj.parentNode.parentNode;		//button의 부모 span, span의 부모객체 div plusdiv로 접근한다.
+  tr.parentNode.removeChild(tr);		//plusdiv의 부모인 todolist 로 접근해서 그 자손인 plusdiv를 제거한다.
